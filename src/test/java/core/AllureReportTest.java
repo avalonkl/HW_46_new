@@ -15,7 +15,7 @@ public class AllureReportTest {
 	static String browser = System.getProperty("browser"); // -Dbrowser="firefox"
 
 	@Step("Step [set value] - [{1}]")
-	public void setValueTest(By by, String value) {
+	public void setValueTest(By by, String value) throws Exception {
 		Common.setValue(by, value);
 	};
 
